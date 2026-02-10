@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3">
+      <div className="absolute bottom-10 left-0 w-full z-20 flex flex-col items-center gap-3">
         <span className="text-white/60 text-xs font-medium uppercase tracking-[0.25em]">Scroll Down</span>
         <div className="w-px h-12 bg-gradient-to-b from-white/50 to-transparent relative">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-primary animate-bounce" />

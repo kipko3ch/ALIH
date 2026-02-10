@@ -4,19 +4,35 @@ import AnimatedSection from './ui/AnimatedSection';
 
 const ContactPage: React.FC = () => {
     return (
-        <div className="pt-28">
+        <div className="pb-12">
+            {/* Hero Section */}
+            <div className="relative h-[60vh] min-h-[500px] w-full mb-16 overflow-hidden flex items-center justify-center">
+                <div className="absolute inset-0 bg-black/60 z-10" />
+                <img
+                    src="/about.png"
+                    alt="Our Team & Mission"
+                    className="absolute inset-0 w-full h-full object-cover top-0"
+                />
+                <div className="relative z-20 text-center px-4 max-w-4xl mx-auto pt-20">
+                    <span className="text-primary font-bold tracking-widest uppercase text-sm mb-6 block">Who We Are</span>
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight">
+                        A Dedicated Team Behind Every Impact
+                    </h1>
+                    <p className="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed">
+                        We are a passionate group of educators, social workers, advocates, and community leaders creating an inclusive Rwanda.
+                    </p>
+                </div>
+            </div>
+
             {/* Team Section */}
-            <section className="py-20 bg-white">
+            <section className="bg-white">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
                         <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Our People</span>
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-slate-900 mb-6">
-                            A Dedicated Team Behind Every Impact
-                        </h1>
-                        <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-                            We are a passionate group of educators, social workers, advocates, and community leaders united by one goal — creating an inclusive Rwanda where every child has the opportunity to thrive regardless of ability.
-                        </p>
-                    </AnimatedSection>
+                        <h2 className="text-3xl font-display font-bold text-slate-900">
+                            Meet the Changemakers
+                        </h2>
+                    </div>
 
                     <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10 mb-16">
                         <AnimatedSection delay={0.1} direction="up">
