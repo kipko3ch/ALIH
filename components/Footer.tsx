@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li className="text-slate-500">
-                Kabuga, Gako Cell<br />Rwamagana District, Rwanda
+                Head Office: Kabuga, Gako Cell, Kicukiro District<br />Community Hub: Rwamagana District, Eastern Province
               </li>
             </ul>
           </div>

@@ -85,7 +85,8 @@ const GetInvolved: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Visit Us</p>
-                    <p className="text-lg font-medium text-slate-900">Head Office — Kabuga, Gako Cell<br />Rwamagana District, Eastern Province</p>
+                    <p className="text-lg font-medium text-slate-900">Head Office — Kabuga, Gako Cell, Kicukiro District</p>
+                    <p className="text-sm text-slate-500 mt-1">Main Community Hub, Rwamagana District, Eastern Province</p>
                   </div>
                 </div>
               </div>

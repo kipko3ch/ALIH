@@ -131,7 +131,8 @@ const ContactPage: React.FC = () => {
                                     </div>
                                     <div>
                                         <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-0.5">Visit Us</p>
-                                        <p className="text-sm font-medium text-slate-900">Kabuga, Gako Cell, Rwamagana</p>
+                                        <p className="text-sm font-medium text-slate-900">Head Office — Kabuga, Gako Cell, Kicukiro District</p>
+                                        <p className="text-xs text-slate-500 mt-0.5">Community Hub — Rwamagana District</p>
                                     </div>
                                 </div>
                             </AnimatedSection>
