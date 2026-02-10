@@ -4,7 +4,7 @@ import AnimatedSection from './ui/AnimatedSection';
 
 const Strategy: React.FC = () => {
   return (
-    <section className="py-32 bg-secondary text-white relative overflow-hidden clip-path-slant pb-48">
+    <section className="py-32 bg-secondary text-white relative overflow-hidden clip-path-slant pb-48" id="strategy">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 blur-[120px] rounded-full pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-500/10 blur-[100px] rounded-full pointer-events-none"></div>
@@ -12,12 +12,12 @@ const Strategy: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <AnimatedSection className="text-center mb-24">
           <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Our Strategy</span>
-          <h2 className="text-4xl md:text-5xl font-display font-bold">Theory of Change</h2>
+          <h2 className="text-4xl md:text-5xl font-display font-bold">Our Pathway to Impact</h2>
         </AnimatedSection>
 
         <div className="grid md:grid-cols-3 gap-12 relative">
-           {/* Connecting Line (Desktop) */}
-           <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-primary/30 via-primary/30 to-transparent z-0"></div>
+          {/* Connecting Line (Desktop) */}
+          <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-primary/30 via-primary/30 to-transparent z-0"></div>
 
           {/* Step 1 */}
           <AnimatedSection direction="up" delay={0.1} className="relative z-10 text-center group">

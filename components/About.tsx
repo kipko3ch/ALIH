@@ -7,17 +7,17 @@ const About: React.FC = () => {
     <section className="py-32 overflow-hidden" id="about">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
-          
+
           <AnimatedSection direction="right" className="relative order-2 lg:order-1">
-             {/* Decorative blob */}
+            {/* Decorative blob */}
             <div className="absolute -top-10 -left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl mix-blend-multiply filter opacity-70 animate-blob"></div>
             <div className="absolute -bottom-10 -right-10 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl mix-blend-multiply filter opacity-70 animate-blob animation-delay-2000"></div>
-            
+
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl rotate-1 hover:rotate-0 transition-transform duration-700 ease-out">
-              <img 
-                className="w-full h-full object-cover" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuADbZf5-_Fk1rAqdBClAiC8B3nuKq4f5pgBDHc4i-ucfewGou1Kc2QvtqtICpdUiI4Ze8CBJ5fIqfpHQNx4gkVRlaK3yRmUJSHdHW0oq-_HBJQ-hORjOYcH1BzvMYDaDQzUkm9ZhIpdfQtCywtcQuzBb5uDIydTvKSMRP6CIMUck9w6RQ-d6xXMEeUcuu9j--bkRF8QY6wCaMQZA_LKVsXEuJyecQWQQBRCCJNEpjgq4HHFLGDpelYQhPqbx9jOElSGuy6FDeOnO5k" 
-                alt="Community meeting under a tree" 
+              <img
+                className="w-full h-full object-cover"
+                src="/download.jpeg"
+                alt="Child from the community"
               />
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 to-transparent text-white">
                 <p className="font-medium italic">"Community is the root of resilience."</p>

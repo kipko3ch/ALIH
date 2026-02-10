@@ -1,6 +1,6 @@
 import React, { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -9,7 +9,6 @@ const Hero: React.FC = () => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Image scale in
       gsap.from(imageRef.current, {
         scale: 1.1,
         opacity: 0,
@@ -17,7 +16,6 @@ const Hero: React.FC = () => {
         ease: "power2.out"
       });
 
-      // Text stagger up
       gsap.from(".hero-text", {
         y: 100,
         opacity: 0,
@@ -40,8 +38,8 @@ const Hero: React.FC = () => {
         <img
           ref={imageRef}
           className="w-full h-full object-cover"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH7DE7YBFUeo65Ez0ze6eVztljsKAHmG2x08x7c7UjLFXN6Ot1iI1z7FyOIUJJVfjj4aCad5rHDfkdSDBVoxtavJd4zyKK88AHkqDQOov9UcVDyeVk4h_zqTkLTGK6Pw8-iDjRdurr4rKHhhvd16wa9IC9n3PWozQnBa1mcZm8ZJ9wY_2TNs-b4aEwmHsSR3X71p5paNK2cDTbmz5v5N6gcjaDcLoS5MY3WjUSEXCtuTItKG-H59t0NzSFS_c3uWt1cb0UoRkU3E8"
-          alt="Rwandan hills and children walking"
+          src="/024--.jpg"
+          alt="Children in inclusive classroom in Rwanda"
         />
       </div>
 
@@ -58,23 +56,23 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="hero-text flex flex-col sm:flex-row gap-5">
-            <button className="group bg-primary hover:bg-white text-secondary px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(19,236,91,0.5)] hover:shadow-[0_0_60px_-10px_rgba(255,255,255,0.5)]">
+            <a
+              href="#/contact"
+              className="group bg-primary hover:bg-white text-secondary px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 transition-all duration-300"
+            >
               Support Our Work
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </button>
-            <button className="group bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 transition-all duration-300">
-              <div className="w-8 h-8 rounded-full bg-white text-secondary flex items-center justify-center">
-                <Play className="w-3 h-3 ml-0.5 fill-current" />
-              </div>
-              Watch Our Story
-            </button>
+            </a>
           </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce text-white/50">
-        <ArrowRight className="w-6 h-6 rotate-90" />
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3">
+        <span className="text-white/60 text-xs font-medium uppercase tracking-[0.25em]">Scroll Down</span>
+        <div className="w-px h-12 bg-gradient-to-b from-white/50 to-transparent relative">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-primary animate-bounce" />
+        </div>
       </div>
     </header>
   );

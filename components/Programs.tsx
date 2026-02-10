@@ -46,9 +46,6 @@ const Programs: React.FC = () => {
                 <p className="text-slate-500 text-sm leading-relaxed flex-grow">
                   {program.desc}
                 </p>
-                <div className="mt-6 pt-6 border-t border-slate-100 flex items-center text-primary font-bold text-sm opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all">
-                  Learn more
-                </div>
               </div>
             </AnimatedSection>
           ))}

@@ -19,7 +19,7 @@ const opportunities = [
     icon: Briefcase,
     title: "Careers",
     desc: "Looking for a purpose-driven career? Explore professional roles in special education, advocacy, and social work.",
-    cta: "View Openings"
+    cta: "Get in touch"
   }
 ];
 
@@ -37,85 +37,50 @@ const GetInvolved: React.FC = () => {
                 </div>
                 <h3 className="text-2xl font-display font-bold mb-4">{item.title}</h3>
                 <p className="text-slate-600 mb-8 leading-relaxed flex-grow">{item.desc}</p>
-                <button className="flex items-center gap-2 text-primary font-bold group-hover:gap-4 transition-all">
+                <a href="#/contact" className="flex items-center gap-2 text-primary font-bold group-hover:gap-4 transition-all">
                   {item.cta} <ArrowRight size={18} />
-                </button>
+                </a>
               </div>
             </AnimatedSection>
           ))}
         </div>
       </div>
 
-      {/* Contact Form Section */}
+      {/* Contact Info Section */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <AnimatedSection className="bg-surface rounded-[3rem] overflow-hidden p-8 md:p-12 lg:p-20 shadow-sm border border-slate-100">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
 
-            {/* Left: Form */}
+            {/* Left: CTA */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-slate-900 mb-6">Get in Touch</h2>
-              <p className="text-slate-600 mb-10 text-lg">Have questions about our programs or want to support our work? Send us a message.</p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-slate-900 mb-6">Ready to Make a Difference?</h2>
+              <p className="text-slate-600 mb-10 text-lg">
+                Whether you want to partner, volunteer, or support our programs — we'd love to connect with you. Reach out and let's create lasting change together.
+              </p>
 
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold text-slate-700 ml-1">Full Name</label>
-                    <input
-                      type="text"
-                      placeholder="John Doe"
-                      className="w-full px-6 py-4 rounded-2xl border-none bg-white shadow-sm focus:ring-2 focus:ring-primary outline-none transition-all placeholder:text-slate-300"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold text-slate-700 ml-1">Email Address</label>
-                    <input
-                      type="email"
-                      placeholder="john@example.com"
-                      className="w-full px-6 py-4 rounded-2xl border-none bg-white shadow-sm focus:ring-2 focus:ring-primary outline-none transition-all placeholder:text-slate-300"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-slate-700 ml-1">Subject</label>
-                  <select className="w-full px-6 py-4 rounded-2xl border-none bg-white shadow-sm focus:ring-2 focus:ring-primary outline-none transition-all text-slate-600 cursor-pointer appearance-none">
-                    <option>Partnership Inquiry</option>
-                    <option>Volunteering Opportunity</option>
-                    <option>Donation Question</option>
-                    <option>General Inquiry</option>
-                  </select>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-slate-700 ml-1">Message</label>
-                  <textarea
-                    rows={5}
-                    placeholder="How can we help you?"
-                    className="w-full px-6 py-4 rounded-2xl border-none bg-white shadow-sm focus:ring-2 focus:ring-primary outline-none transition-all placeholder:text-slate-300 resize-none"
-                  ></textarea>
-                </div>
-
-                <button className="w-full bg-primary text-secondary font-bold text-lg py-4 rounded-2xl hover:bg-primary-dark transition-all shadow-lg shadow-primary/20 active:scale-[0.99]">
-                  Send Message
-                </button>
-              </form>
-            </div>
-
-            {/* Right: Info & Map */}
-            <div className="flex flex-col gap-10">
-              <div className="space-y-8">
-                <div className="flex items-start gap-6 group">
+              <div className="space-y-6 mb-10">
+                <a href="mailto:contact@abilitylinkimpact.org" className="flex items-start gap-6 group">
                   <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                     <Mail size={20} />
                   </div>
                   <div>
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Email Us</p>
-                    <p className="text-lg font-medium text-slate-900">contact@abilitylink.rw</p>
+                    <p className="text-lg font-medium text-slate-900">contact@abilitylinkimpact.org</p>
                   </div>
-                </div>
+                </a>
+
+                <a href="tel:+250798555877" className="flex items-start gap-6 group">
+                  <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                    <Phone size={20} />
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Call Us</p>
+                    <p className="text-lg font-medium text-slate-900">+250 798 555 877</p>
+                  </div>
+                </a>
 
                 <div className="flex items-start gap-6 group">
-                  <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                  <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center shrink-0">
                     <MapPin size={20} />
                   </div>
                   <div>
@@ -123,29 +88,32 @@ const GetInvolved: React.FC = () => {
                     <p className="text-lg font-medium text-slate-900">Main Community Hub,<br />Rwamagana District, Eastern Province</p>
                   </div>
                 </div>
-
-                <div className="flex items-start gap-6 group">
-                  <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
-                    <Phone size={20} />
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Call Us</p>
-                    <p className="text-lg font-medium text-slate-900">+250 788 000 000</p>
-                  </div>
-                </div>
               </div>
 
-              {/* Styled Map Image */}
-              <div className="relative rounded-3xl overflow-hidden h-64 shadow-lg mt-auto group">
-                <div className="absolute inset-0 bg-primary/20 z-10 group-hover:bg-transparent transition-colors duration-500"></div>
+              <a
+                href="#/contact"
+                className="inline-flex items-center gap-3 bg-primary text-secondary font-bold text-lg py-4 px-8 rounded-2xl hover:bg-primary-dark transition-all active:scale-[0.99]"
+              >
+                Get in Touch
+                <ArrowRight size={20} />
+              </a>
+            </div>
+
+            {/* Right: Image */}
+            <div className="flex flex-col gap-6">
+              <div className="relative rounded-3xl overflow-hidden flex-1">
                 <img
-                  className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7-9vdB4d8g1mwsiPW1MSB4xQVjVMFlICT0l6qC6ii9uCr-YQWl0RLtNk2OWjQrAII4V1PQkDC2CIhdlWlqCrOjp8CHYwjQtAywR11XDdFKVfT8iBErkr8J18c64id1WR0_FL2Kg6Gl8caixl8gQJTWALP-2asUGDGZvcYLtovUGt2uL4_lw1o2yYDy4XaKQcy6dABbH0DGy7vofxkm2hkG2R958AXo3ziryzsev_CvaerbPrBYobw2AsNXCL54HcISrtOMX5jFvw"
-                  alt="Map of Eastern Province"
+                  className="w-full h-full object-cover"
+                  src="/salieu-inclusive-education.png"
+                  alt="Inclusive education in action"
                 />
-                <div className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur px-4 py-2 rounded-xl text-xs font-bold shadow-sm">
-                  📍 Eastern Province Hub
-                </div>
+              </div>
+              <div className="relative rounded-3xl overflow-hidden h-48">
+                <img
+                  className="w-full h-full object-cover"
+                  src="/high-angle-view-disable-black-260nw-1629745840.jpg"
+                  alt="Child with disability in classroom"
+                />
               </div>
             </div>
 
