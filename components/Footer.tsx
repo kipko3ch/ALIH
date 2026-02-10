@@ -46,8 +46,8 @@ const Footer: React.FC = () => {
             <h6 className="font-display font-bold text-white mb-6">Contact</h6>
             <ul className="space-y-4 text-sm text-slate-400">
               <li>
-                <a href="mailto:contact@abilitylinkimpact.org" className="hover:text-primary transition-colors">
-                  contact@abilitylinkimpact.org
+                <a href="mailto:abilitylinkimpact@gmail.com" className="hover:text-primary transition-colors">
+                  abilitylinkimpact@gmail.com
                 </a>
               </li>
               <li>
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li className="text-slate-500">
-                Rwamagana District,<br />Eastern Province, Rwanda
+                Kabuga, Gako Cell<br />Rwamagana District, Rwanda
               </li>
             </ul>
           </div>

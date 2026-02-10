@@ -101,13 +101,13 @@ const ContactPage: React.FC = () => {
                         {/* Contact Info Cards */}
                         <div className="lg:col-span-2 grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
                             <AnimatedSection delay={0.1} direction="up">
-                                <a href="mailto:contact@abilitylinkimpact.org" className="flex items-center gap-4 p-5 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all group">
+                                <a href="mailto:abilitylinkimpact@gmail.com" className="flex items-center gap-4 p-5 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all group">
                                     <div className="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-primary transition-colors">
                                         <Mail size={18} className="text-primary group-hover:text-white transition-colors" />
                                     </div>
                                     <div className="min-w-0">
                                         <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-0.5">Email Us</p>
-                                        <p className="text-sm font-medium text-slate-900 truncate">contact@abilitylinkimpact.org</p>
+                                        <p className="text-sm font-medium text-slate-900 truncate">abilitylinkimpact@gmail.com</p>
                                     </div>
                                 </a>
                             </AnimatedSection>
@@ -131,7 +131,7 @@ const ContactPage: React.FC = () => {
                                     </div>
                                     <div>
                                         <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-0.5">Visit Us</p>
-                                        <p className="text-sm font-medium text-slate-900">Rwamagana, Eastern Province</p>
+                                        <p className="text-sm font-medium text-slate-900">Kabuga, Gako Cell, Rwamagana</p>
                                     </div>
                                 </div>
                             </AnimatedSection>

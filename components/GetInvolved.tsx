@@ -59,13 +59,13 @@ const GetInvolved: React.FC = () => {
               </p>
 
               <div className="space-y-6 mb-10">
-                <a href="mailto:contact@abilitylinkimpact.org" className="flex items-start gap-6 group">
+                <a href="mailto:abilitylinkimpact@gmail.com" className="flex items-start gap-6 group">
                   <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                     <Mail size={20} />
                   </div>
                   <div>
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Email Us</p>
-                    <p className="text-lg font-medium text-slate-900">contact@abilitylinkimpact.org</p>
+                    <p className="text-lg font-medium text-slate-900">abilitylinkimpact@gmail.com</p>
                   </div>
                 </a>
 
@@ -85,7 +85,7 @@ const GetInvolved: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Visit Us</p>
-                    <p className="text-lg font-medium text-slate-900">Main Community Hub,<br />Rwamagana District, Eastern Province</p>
+                    <p className="text-lg font-medium text-slate-900">Head Office — Kabuga, Gako Cell<br />Rwamagana District, Eastern Province</p>
                   </div>
                 </div>
               </div>
